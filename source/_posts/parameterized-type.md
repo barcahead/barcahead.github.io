@@ -1,4 +1,10 @@
-### Parameterized Type
+---
+layout: post
+title: "Parameterized type"
+date: 2017-01-05 21:47
+comments: true
+categories: scala
+---
 
 #### Generic
 
@@ -73,6 +79,8 @@ var f: C => C 	= 	(c: C)		=> new C
 ```
 
 为什么?
+
+<!-- more -->
 
 > Liskov Substitution Principle (require less, provide more)
 
@@ -184,3 +192,7 @@ orderMergeSort(people)
 orderMergeSort(List(3,2,1))    //编译错误，Int不是Ordered[Int]的subtype
 ```
 
+参考书籍：
+
+1. Programming in Scala, 3rd edition
+2. Programming Scala 
